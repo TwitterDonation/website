@@ -18,7 +18,7 @@
                 <span>Make donations by the simple means of a Tweet.</span>
             </div>
 
-            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">You just donated! 💸👌🎉✨❤</p>&mdash; Donation Bot (@make_donation) <a href="https://twitter.com/make_donation/status/1330244020082249731?ref_src=twsrc%5Etfw">November 21, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <blockquote class='twitter-tweet'><p lang='en' dir='ltr'>You just donated! 💸👌🎉✨❤</p>&mdash; Donation Bot (@make_donation) <a href='https://twitter.com/make_donation/status/1330244020082249731?ref_src=twsrc%5Etfw'>November 21, 2020</a></blockquote> <script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script>
 
             <hr id='separator'>
 
@@ -30,10 +30,16 @@
         <div id='donate'>
             <button class='btn-twitter' id='login'><b>Login with Twitter</b></button>
             <div style='height: 70px;'></div>
-            <div hidden id='deposit-div'>
+            <div id='deposit-div' style='visibility:visible;'>
                 <span id='hello'></span>
                 <div style='height: 10px;'></div>
-                <button class='btn-paypal' id='deposit'><b>Send funds</b></button>
+                <div>
+                    <input id='amount' type='number' step='1' min='1' value='1' pattern='\d+' style='width: 50px;' />
+                    <select id='currency'>
+                        <option value='USD'>USD</option>
+                    </select>
+                    <button class='btn-paypal' id='deposit'><b>Send funds</b></button>
+                </div>
             </div>
         </div>
 
@@ -41,7 +47,7 @@
         <script src='/__/firebase/8.1.1/firebase-auth.js'></script>
         <script src='/__/firebase/8.1.1/firebase-firestore.js'></script>
         <script src='/__/firebase/init.js'></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
         <script src='static/index.js' type='text/javascript'></script>
     </body>
 </html>
