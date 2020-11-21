@@ -59,6 +59,14 @@ a {
     margin-top: 50px;
 }
 
+#deposit-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
 .btn-twitter {
     color: white;
     background-color: #00acee;
@@ -70,6 +78,22 @@ a {
 .btn-twitter:hover {
     color: white;
     background-color: #0087ba;
+    border-width: 0;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.btn-paypal {
+    color: white;
+    background-color: #0079C1;
+    border-width: 0;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.btn-paypal:hover {
+    color: white;
+    background-color: #00457C;
     border-width: 0;
     padding: 8px;
     border-radius: 3px;
