@@ -1,7 +1,7 @@
 const generateDepositLink = async (twitterId, currency, amount) => {
     return new Promise((resolve, reject) => {
-        const returnUrl = 'https://twittercash-68b84.web.app'
-        const cancelUrl = 'https://twittercash-68b84.web.app'
+        const returnUrl = 'https://twitter-donation.web.app'
+        const cancelUrl = 'https://twitter-donation.web.app'
         const corsAnywhere = 'https://cors-anywhere.herokuapp.com/'
         const url = `${corsAnywhere}https://us-central1-twittercash-68b84.cloudfunctions.net/webhook/paypal?currency=${currency}&amount=${amount}&return_url=${returnUrl}&cancel_url=${cancelUrl}&twitter_id=${twitterId}`
         $.get(url, (data, status) => {
