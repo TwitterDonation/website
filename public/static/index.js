@@ -3,7 +3,7 @@ const generateDepositLink = async (twitterId, currency, amount) => {
         const returnUrl = 'https://twitter-donation.web.app'
         const cancelUrl = 'https://twitter-donation.web.app'
         const corsAnywhere = 'https://cors-anywhere.herokuapp.com/'
-        const url = `${corsAnywhere}https://us-central1-twittercash-68b84.cloudfunctions.net/webhook/paypal?currency=${currency}&amount=${amount}&return_url=${returnUrl}&cancel_url=${cancelUrl}&twitter_id=${twitterId}`
+        const url = `${corsAnywhere}https://us-central1-twitter-donation.cloudfunctions.net/webhook/paypal?currency=${currency}&amount=${amount}&return_url=${returnUrl}&cancel_url=${cancelUrl}&twitter_id=${twitterId}`
         $.get(url, (data, status) => {
             if (status == 'success') {
                 resolve(data.link)
