@@ -36,8 +36,8 @@ window.onload = () => {
             const depositDiv = document.getElementById('deposit-div')
             const text = document.getElementById('hello')
 
-            twitterLogin.style.visibility = 'hidden'
             text.innerHTML = `Hello ${displayName}!`
+            twitterLogin.style.visibility = 'hidden'
             depositDiv.style.visibility = 'visible'
 
             deposit.onclick = () => {
