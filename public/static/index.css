@@ -68,6 +68,9 @@ a {
 }
 
 .btn-twitter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     background-color: #00acee;
     border-width: 0;
