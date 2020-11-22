@@ -22,24 +22,24 @@
 
             <hr id='separator'>
 
+            <div id='donate'>
+                <button class='btn-twitter' id='login'><b>Login with Twitter</b></button>
+                <div style='height: 70px;'></div>
+                <div id='deposit-div' style='visibility:hidden;'>
+                    <span id='hello'></span>
+                    <div style='height: 10px;'></div>
+                    <div>
+                        <input id='amount' type='number' step='1' min='1' value='1' pattern='\d+' style='width: 50px;' />
+                        <select id='currency'>
+                            <option value='EUR'>EUR</option>
+                        </select>
+                        <button class='btn-paypal' id='deposit'><b>Send funds</b></button>
+                    </div>
+                </div>
+            </div>
+
             <div id='footer'>
                 <a href='https://github.com/TwitterDonation'><b>github.com/TwitterDonation</b></a>
-            </div>
-        </div>
-
-        <div id='donate'>
-            <button class='btn-twitter' id='login'><b>Login with Twitter</b></button>
-            <div style='height: 70px;'></div>
-            <div id='deposit-div' style='visibility:hidden;'>
-                <span id='hello'></span>
-                <div style='height: 10px;'></div>
-                <div>
-                    <input id='amount' type='number' step='1' min='1' value='1' pattern='\d+' style='width: 50px;' />
-                    <select id='currency'>
-                        <option value='EUR'>EUR</option>
-                    </select>
-                    <button class='btn-paypal' id='deposit'><b>Send funds</b></button>
-                </div>
             </div>
         </div>
 
